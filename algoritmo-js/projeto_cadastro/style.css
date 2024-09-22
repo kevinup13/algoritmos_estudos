@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.conteiner {
+    background-color: rgb(198, 198, 198);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+}
+header, section {
+    display: flex;
+    width: 1124px;
+    margin: 0 auto;
+    background-color: blueviolet
+}
+header{
+    height: 80px;
+
+}
+section {
+    height: calc(100vh - 80px);
+}
