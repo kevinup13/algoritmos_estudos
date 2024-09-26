@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Produtos</title>
+    <title>Calculo de IMC</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="conteiner">
         <header>
-            <h1>Sistema de cadastro</h1>
-
+            <h1>Calculando IMC</h1>
         </header>
-        <section>
-            
 
+        <section>
+            <div class="left">
+                <h3>Preencha os campos para saber o seu IMC</h3>
+                <label for="peso">
+                    <p>Digite o seu peso (em Kg)</p>
+                    <input id="peso" type="text">
+                </label>
+                <label for="altura"></label>
+                    <p>Digite sua altura (em metros)</p>
+                    <input id="altura" type="text">
+                </label>
+                <button type="button">Calcular</button>
+            </div>
+
+            <div class="right">
+                <p>Peso: </p>
+                <p>Altura: </p>
+                <p>IMC: </p>
+            </div>
+            
         </section>
     </div>
 
