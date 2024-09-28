@@ -3,16 +3,8 @@
     margin: 0;
     padding: 0;
 }
-.conteiner {
-    background-color: rgb(198, 198, 198);
-    color: black;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-
-}
-header{
+/* Header */
+.header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,39 +13,82 @@ header{
     height: 80px;
 
 }
-
-header h1 {
+.header h1 {
     color: white;
     font-size: bolder;
 }
 
-section{
+/* Conteiner */
+.conteiner {
+    background-image: url(bg-imc.jpg);
+/*     background: rgb(179, 179, 179);
+ */   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px;
+    flex-direction: column;
+    width: 100%;
     height: calc(100vh - 80px);
-    margin: 10px;
-
+    justify-content: center;
+    align-items:center;
 }
-.left, .right {
-    border: 1px solid blueviolet;
+
+/* Section */
+.area-dados{
+    display: flex;
+    background-color: rgba(137, 43, 226, 0.727);
+    width: 800px;
+    height: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* campos da section (left/right Side */
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: rgba(216, 216, 216, 0.727);
     width: 50%;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
 }
-/* 
-header, section {
-    display: flex;
-    width: 1124px;
-    margin: 0 auto;
-    background-color: blueviolet
+
+.left-side> label,p, input {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
 }
-header{
-    height: 80px;
+.sub-title {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orangered;
+    margin-bottom: 20px;
+}
+input {
+    width: 60%;
+    text-align: center;
+    line-height: 30px;
+    border: none;
+    border-radius: 8px;
+    outline-color: orangered;
+}
+button {
+    width: 60%;
+    text-align: center;
+    line-height: 30px;
+    border: none;
+    border-radius: 8px;
+    outline-color: orangered;
+    transition-duration: 1s;
+    transition: ease-in-out;
 
 }
-section {
-    display: flex;
-    height: calc(100vh - 80px);
-} */
+button:hover {
+    background-color: orangered;
+    color: white;
+
+}
