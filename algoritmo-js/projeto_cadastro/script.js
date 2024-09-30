@@ -1,14 +1,18 @@
-console.log("Teste de funcionamento. ok")
+let btn = document.querySelector(".btn");
 
-// initial data
-peso = document.querySelector("#peso");
-altura = document.querySelector("#altura");
+btn.addEventListener("click", ()=>{
+    let peso = document.querySelector("#peso").value;
+    let altura = document.querySelector("#altura").value;
+    let infor = document.querySelector(".infor p");
 
+    
+    if (!peso || !altura){
+        alert("Insira um numero válido!");
+    }
+    else {
+        let imc = peso / (altura ** 2);
+        infor.innerHTML = `<p>O seu IMC é: ${imc}</p>`;
+    }
+   
+}) 
 
-console.log(peso);
-console.log(altura);
-
-alert(peso);
-alert(altura);
-// functions
-// Events

@@ -82,9 +82,9 @@ button {
     line-height: 30px;
     border: none;
     border-radius: 8px;
-    outline-color: orangered;
-    transition-duration: 1s;
-    transition: ease-in-out;
+    background-color: blueviolet;
+    color: white;
+    transition: background-color .1s ease-in-out, color .1s ease-in-out;
 
 }
 button:hover {
