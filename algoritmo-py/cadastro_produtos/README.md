@@ -17,7 +17,7 @@ Execute o script Python com o comando:
 
 bash
 Copiar código
-python cadastro_produtos.py
+```python cadastro_produtos.py```
 O menu exibirá as seguintes opções:
 [1] Cadastrar Produto: Permite que você insira o nome e o preço do produto.
 [2] Exibir Produtos: Exibe todos os produtos cadastrados e seus respectivos preços.
